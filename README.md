@@ -4,10 +4,10 @@
 *`option` (not-build-legacy-makefile), `-DLEGACY_BUILD=OFF`， otherwise `-DLEGACY_BUILD=ON`
 
 ```
-rm -rf ~/build-tmp
-mkdir -p ~/build-tmp 
-cd ~/build-tmp
-cmake -H~/workspace/yche/git-repos/Graph500KroneckerGraphGenerator -B~/build-tmp -DCMAKE_INSTALL_PREFIX=~/yche-bin
+rm -rf build-tmp
+mkdir -p build-tmp 
+cd build-tmp
+cmake -H/MNT_PATH_TO_GITHUB_FOLDER/Graph500KroneckerGraphGenerator -B/MNT_PATH_TO_GITHUB_FOLDER/build-tmp -DCMAKE_INSTALL_PREFIX=/MNT_PATH_TO_GITHUB_FOLDER/yche-bin
 make -j
 make install
 ```
