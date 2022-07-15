@@ -1,17 +1,3 @@
-## Build with cmake
-
-* assume `~/yche-bin` exists, otherwise `mkdir -p ~/yche-bin`
-*`option` (not-build-legacy-makefile), `-DLEGACY_BUILD=OFF`， otherwise `-DLEGACY_BUILD=ON`
-
-```
-rm -rf build-tmp
-mkdir -p build-tmp 
-cd build-tmp
-cmake -H/MNT_PATH_TO_GITHUB_FOLDER/Graph500KroneckerGraphGenerator -B/MNT_PATH_TO_GITHUB_FOLDER/build-tmp -DCMAKE_INSTALL_PREFIX=/MNT_PATH_TO_GITHUB_FOLDER/yche-bin
-make -j
-make install
-```
-
 ## Build with make only 
 
 see [uwsampa/graphbench/data/generator](https://github.com/uwsampa/graphbench/tree/master/data/generator). 
